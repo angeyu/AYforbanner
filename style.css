@@ -1,4 +1,169 @@
 @use "@material/icon-button";
 @use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/button/styles";
+@use "@material/button";
+
+@import url("https://p.typekit.net/p.css?s=1&k=yyn6exc&ht=tk&f=13378.13380.13382&a=86745184&app=typekit&e=css");
+@import url("https://p.typekit.net/p.css?s=1&k=svc0cnr&ht=tk&f=9785.9786.9787.9788.9789.9790.9791.9792.9793.9794&a=86745225&app=typekit&e=css");
 
 @include icon-button.core-styles;
+
+:root {
+  --mdc-theme-primary: #FFFFFF;
+  --mdc-theme-secondary: #007EB4;
+}
+
+.mdc-layout-grid__cell {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 0 0 4px 4px;
+  }
+
+.mdc-layout-grid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ic:hover{
+    background-color: #ADD8E6;
+}
+
+h5,
+p {
+    color: #00205B;
+}
+
+
+h5{
+    font-family: utopia-std, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+p{
+    font-family: effra, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.mdc-card > h5 {
+    padding: 12px 0 0 12px;
+}
+
+.mdc-card > p {
+    padding: 0 0 0 12px;
+}
+
+.mdc-card__actions > .mdc-button {
+
+    align: center;
+    text-transform: none;
+    background: #007EB4;
+}
+
+.mdc-card__action--button > .mdc-button__label {
+    color: #FFFFFF;
+    font-family: effra, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+}
+.mdc-touch-target-wrapper > .mdc-button {
+    align: center;
+    text-transform: none;
+    background: #007EB4;
+}
+
+.article > .mdc-button {
+    font-family: utopia-std, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    text-transform: none;
+    letter-spacing: normal;
+    color: #00205B;
+    padding: 0;
+}
+
+
+.date {
+    font-size: 13px;
+}
+.carousel,
+.mdc-layout-grid{
+    margin: 0 60px;
+}
+
+
+img {
+    max-height: 500px;
+    object-fit: cover;
+    width: auto;
+    border-radius:4px 4px 0 0;
+}
+
+.carousel-caption{
+    text-align: right;
+    position: 1px;
+}
+
+
+.mdc-top-app-bar{
+    background-color: #FFFFFF;
+}
+
+.homepage-logo{
+    min-width: 100px;
+    object-fit: contain;
+}
+
+.article{
+    padding: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 0 0 4px 4px;
+}
+
+.mini > img {
+    max-height: 140px;
+    object-fit: cover;
+}
+
+.hidden-on-large {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hidden-on-large {
+        display: block;
+    }
+    .mdc-layout-grid, .carousel{
+        margin: 0 10px;
+    }
+}
+
+.dark-mode {
+    background-color: #00205B;
+}
+
+button {
+    background-color: #FFFFFF; /* Green */
+    color: #00205B;
+    border-radius: 5px;
+    border: none;
+    padding-top: 12px;
+}
+
+/*
+.mdc-button{
+  --mdc-theme-primary: #00205B;
+  --mdc-theme-on-primary: #00205B;
+
+  @include button.ink-color(#84565E);
+}
+*/
+
+
